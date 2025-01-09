@@ -1,0 +1,20 @@
+button {
+    border: none;
+    background-color: #cc9900;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  button:hover {
+    border: none;
+    background-color: #FFBF00;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  button:disabled,
+  button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
