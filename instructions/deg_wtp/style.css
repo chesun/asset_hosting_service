@@ -5,6 +5,7 @@
     padding: 0;
   }
   
+  /* Page background and default text settings */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,39 +14,44 @@
     background-color: #fafafa;
   }
   
+  /* Container styling */
   .container {
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+    /* Subtle shadow */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
+  /* Headings in UC Davis Blue */
   h2, h3 {
     text-align: center;
     margin-bottom: 1em;
+    color: #002855; /* UC Davis Blue */
   }
   
+  /* Lists */
   ul, ol {
     margin: 1em 0 1em 2em;
   }
-  
   li {
     margin-bottom: 1em;
   }
   
+  /* Highlight important text in UC Davis Gold */
   strong {
-    color: #007BFF;
+    color: #FFBF00; /* UC Davis Gold */
   }
   
+  /* Example box with UC Davis Blue border */
   .example-box {
     background-color: #f9f9f9;
-    border-left: 4px solid #007BFF;
+    border-left: 4px solid #002855; /* UC Davis Blue */
     padding: 1em;
     margin: 1.5em 0;
   }
-  
   .example-box img {
     max-width: 100%;
     height: auto;
@@ -54,19 +60,21 @@
     display: block;
   }
   
+  /* Draw button: UC Davis Gold background with UC Davis Blue text */
   .draw-button {
     display: inline-block;
     padding: 10px 20px;
     margin: 1em 0;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #FFBF00; /* UC Davis Gold */
+    color: #002855; /* UC Davis Blue (text) */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
   }
   
+  /* Button hover: slightly darker gold */
   .draw-button:hover {
-    background-color: #0056b3;
+    background-color: #d9a600; /* A darker shade of UC Davis Gold */
   }
   
