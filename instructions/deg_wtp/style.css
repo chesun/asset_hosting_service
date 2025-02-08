@@ -1,5 +1,11 @@
-/* Basic reset */
-* {
+/* UC Davis Theme Colors */
+:root {
+    --ucd-blue: #002855;
+    --ucd-gold: #FFBF00;
+  }
+  
+  /* Basic reset */
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,29 +35,38 @@
   h2, h3 {
     text-align: center;
     margin-bottom: 1em;
-    color: #002855; /* UC Davis Blue */
+    color: var(--ucd-blue);
   }
   
   /* Lists */
   ul, ol {
     margin: 1em 0 1em 2em;
   }
+  
   li {
     margin-bottom: 1em;
   }
   
-  /* Highlight important text in UC Davis Gold */
+  /* 
+     Highlight important text by making the text UC Davis Blue on a gold background.
+     This approach ensures high contrast for better readability.
+  */
   strong {
-    color: #FFBF00; /* UC Davis Gold */
+    color: var(--ucd-blue);
+    background-color: var(--ucd-gold);
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-weight: bold;
   }
   
   /* Example box with UC Davis Blue border */
   .example-box {
     background-color: #f9f9f9;
-    border-left: 4px solid #002855; /* UC Davis Blue */
+    border-left: 4px solid var(--ucd-blue);
     padding: 1em;
     margin: 1.5em 0;
   }
+  
   .example-box img {
     max-width: 100%;
     height: auto;
@@ -65,16 +80,22 @@
     display: inline-block;
     padding: 10px 20px;
     margin: 1em 0;
-    background-color: #FFBF00; /* UC Davis Gold */
-    color: #002855; /* UC Davis Blue (text) */
+    background-color: var(--ucd-gold);
+    color: var(--ucd-blue);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
   }
   
-  /* Button hover: slightly darker gold */
   .draw-button:hover {
-    background-color: #d9a600; /* A darker shade of UC Davis Gold */
+    background-color: #d9a600; /* Slightly darker gold */
+  }
+  
+  /* Where we'll show the result of "drawWorker()" */
+  .result-area {
+    margin-top: 1em;
+    font-weight: bold;
+    color: var(--ucd-blue);
   }
   
