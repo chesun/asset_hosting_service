@@ -14,8 +14,12 @@ function drawWorker() {
       interval = "10 to 12";
     }
   
-    // Output the result to the 'result' div
+    // Create a new paragraph element to store the result
+    const newResult = document.createElement("p");
+    newResult.textContent = `You drew a worker whose score is in the ${interval} range. (Actual score: ${score})`;
+  
+    // Append this paragraph to the existing results
     const resultDiv = document.getElementById("result");
-    resultDiv.textContent = `You drew a worker who scored in the ${interval} range. (Random score: ${score})`;
+    resultDiv.appendChild(newResult);
   }
   
