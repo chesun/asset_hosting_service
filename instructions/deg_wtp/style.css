@@ -50,6 +50,21 @@
   li {
     margin-bottom: 1em;
   }
+  /* Example box with UC Davis Blue border */
+.example-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--ucd-blue);
+    padding: 1em;
+    margin: 1.5em 0;
+  }
+  
+  .example-box img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border: 1px solid #ddd;
+    display: block;
+  }
   
   /* 
     Highlight important text by making the text UC Davis Blue on a gold background.
