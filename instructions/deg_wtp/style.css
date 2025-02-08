@@ -58,14 +58,14 @@
     margin: 1.5em 0;
   }
   
-  .example-box img {
+.example-box img {
     max-width: 100%;
     height: auto;
     margin: 1em 0;
     border: 1px solid #ddd;
     display: block;
   }
-  
+
   /* 
     Highlight important text by making the text UC Davis Blue on a gold background.
     This ensures high contrast for better readability.
