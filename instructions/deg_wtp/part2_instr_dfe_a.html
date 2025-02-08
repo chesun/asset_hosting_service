@@ -4,33 +4,30 @@
   <meta charset="UTF-8" />
   <title>Part 2 Instructions</title>
   <!-- Link to your external CSS file -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
+
     <h2>Part 2 Instructions</h2>
-    
+
     <h3>Part 2 Overview</h3>
     <ul>
       <li>
-        In Part 2, you will be answering the same questions as in Part 1. However, 
-        this time you can learn more about the same group of workers by 
-        <strong>drawing workers</strong> from them.
+        In Part 2, you will be answering the same questions as in Part 1. However,
+        this time you can learn more about the same group of workers by
+        <strong>drawing random workers</strong>.
       </li>
     </ul>
 
     <h3>Part 2 Details</h3>
     <ol>
       <li>
-        In order to help you make more accurate guesses, you can 
-        <strong>"draw" some workers from this group</strong>. We will show you a button 
-        (example button below), and each time you click it, it will 
-        <strong>randomly draw one worker</strong> 
-        (<strong>every worker is equally likely</strong>) and show you which interval 
-        the worker’s score is in (1–3, 4–6, 7–9, or 10–12). 
-        <strong>This won't affect your earnings</strong>; 
-        it’s just a way to learn about these workers.
-        
+        In order to help you make more accurate guesses, you can
+        <strong>"draw" workers</strong> by clicking a button labeled "Draw a Worker"
+        (see below). Each time you click it, one worker will be <strong>randomly selected</strong> from the group of 100
+        (<strong>every worker is equally likely</strong>). You will see which score range (1–3, 4–6, 7–9, or 10–12) that worker falls into.
+        <strong>This does not affect your earnings</strong>; it simply gives you more information about the group.
         <br><br>
         <!-- Example button -->
         <button class="draw-button" onclick="drawWorker()">Draw a Worker</button>
@@ -39,23 +36,24 @@
 
         <div class="example-box">
           <u>Example:</u><br>
-          <img 
-            src="https://christinasun.net/asset_hosting_service/instructions/deg_wtp/assets/sample_min.png" 
+          <img
+            src="https://christinasun.net/asset_hosting_service/instructions/deg_wtp/assets/sample_min.png"
             alt="Sample Worker"
-          />
-          In this example, you clicked to sample a worker and 
-          the computer randomly selected a worker nicknamed Min, 
-          who scored between 1 and 3 points (shown in red).
+          >
+          In this example, a worker nicknamed Min was randomly drawn,
+          whose score was between 1 and 3 points (highlighted in red).
         </div>
       </li>
+
       <li>
-        You can draw a worker <strong>every 3 seconds</strong> 
-        and <strong>as many times as you like</strong>. 
-        Each time you draw, the computer <strong>selects from the same 100 workers</strong>.
+        You can draw a worker <strong>every 3 seconds</strong>
+        and do it  <strong>as many times as you like</strong>.
+        Each draw is always from the same 100 workers.
       </li>
+
       <li>
-        Bonus calculations in Part 2 work the same way as in Part 1. 
-        Essentially, more accurate answers will increase your chance 
+        Bonus calculations in Part 2 is the same as Part 1.
+        More accurate answers increase your chances
         of earning a higher bonus.
       </li>
     </ol>
