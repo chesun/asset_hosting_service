@@ -16,6 +16,35 @@
     margin: 0;
     padding: 0;
   }
+
+  .iframe-container {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;  /* Ensures no overflow beyond 800x800 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;  /* Optional: for debugging */
+
+}
+
+.scaled-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* The actual iframe is 1390x1390, but scaled down. */
+  width: 1200px;
+  height: 1200px;
+  
+  /* 600 / 1390 = ~0.431, tweak as needed */
+  transform: scale(0.5); 
+  transform-origin: top left;
+  
+  border: none;    /* optional: remove default iframe border */
+  display: block;  /* ensures no baseline whitespace */
+}
+
   
   /* Page background and default text settings */
   body {
@@ -103,18 +132,3 @@
   }
   
 
-  .iframe-container {
-    width: 600px;
-    height: 600px;
-    overflow: hidden;  /* Ensures no overflow beyond 800x800 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.scaled-iframe {
-    transform: scale(0.5);  /* Shrinks the iframe content */
-    transform-origin: top left;
-    width: 1200px;  /* The original iframe size is doubled */
-    height: 1200px;
-}
