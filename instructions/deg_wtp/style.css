@@ -20,15 +20,16 @@
   .iframe-container {
     width: 600px;
     height: 600px;
-    overflow: hidden;  /* Ensures no overflow beyond 800x800 */
-    display: flex;
+    overflow: hidden; 
+    display: block;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     border: 1px solid #ccc;  /* Optional: for debugging */
 
 }
 
 .scaled-iframe {
+  position:relative;
   top: 0;
   left: 0;
 
