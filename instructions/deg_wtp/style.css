@@ -102,3 +102,19 @@
     color: var(--ucd-blue);
   }
   
+
+  .iframe-container {
+    width: 700px;
+    height: 700px;
+    overflow: hidden;  /* Ensures no overflow beyond 800x800 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scaled-iframe {
+    transform: scale(0.5);  /* Shrinks the iframe content */
+    transform-origin: top left;
+    width: 1400px;  /* The original iframe size is doubled */
+    height: 1400px;
+}
