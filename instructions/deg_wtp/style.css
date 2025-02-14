@@ -113,8 +113,8 @@
 }
 
 .scaled-iframe {
-    transform: scale(0.4);  /* Shrinks the iframe content */
+    transform: scale(0.5);  /* Shrinks the iframe content */
     transform-origin: top left;
-    width: 1400px;  /* The original iframe size is doubled */
-    height: 1400px;
+    width: 1200px;  /* The original iframe size is doubled */
+    height: 1200px;
 }
