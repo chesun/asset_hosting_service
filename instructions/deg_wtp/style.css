@@ -104,8 +104,8 @@
   
 
   .iframe-container {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     overflow: hidden;  /* Ensures no overflow beyond 800x800 */
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@
 }
 
 .scaled-iframe {
-    transform: scale(0.5);  /* Shrinks the iframe content */
+    transform: scale(0.4);  /* Shrinks the iframe content */
     transform-origin: top left;
     width: 1400px;  /* The original iframe size is doubled */
     height: 1400px;
